@@ -2,6 +2,6 @@ name: Contexts
 on: push
 jobs:
  print:
-  runs-out: windows-latest
+  runs-ou: windows-latest
   steps:
    - run: echo "${{ github.actor }}"
