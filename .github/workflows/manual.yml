@@ -1,0 +1,16 @@
+name: manual
+on:
+ workflow_dispatch:
+  inputs:
+   greeting:
+    type:  string
+    default: Hello
+    required: true
+    description: A cheerful world
+
+jobs:
+ run:
+  runs-on: windows-latest
+  steps:
+   - run: echo "${{ inputs.greeting }}"
+  
