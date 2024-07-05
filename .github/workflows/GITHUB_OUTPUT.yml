@@ -6,6 +6,9 @@ jobs:
   steps:
    - id: source
      run: echo "result=Hello" >> "${GITHUB_OUTPUT}"
+   - env:
+      USERNAME: ${{ vars.USERNAME }}
+     run: echo "${USERNAME}"
 #   - env:
 #      RESULT: ${{ steps.source.outputs.result }}
 #    run: echo "${RESULT}"
