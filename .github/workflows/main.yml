@@ -4,5 +4,5 @@ jobs:
  hello:
   runs-on: windows-latest
   steps:
-  - run: echo "Hello, world"
+  - run: echo "Hello, Japan"
   - uses: actions/checkout@v4
