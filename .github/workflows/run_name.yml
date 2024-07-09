@@ -4,6 +4,7 @@ on: push
 jobs:
  print:
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
    - run: echo "Hello"
    

@@ -3,6 +3,7 @@ on: push
 jobs:
  share:
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
    - run: echo "RESULT=hello" >> "${GITHUB_ENV}"
    - run: echo "${RESULT}"

@@ -3,6 +3,7 @@ on: push
 jobs:
  share:
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
    - id: source
      run: echo "result=Hello" >> "${GITHUB_OUTPUT}"

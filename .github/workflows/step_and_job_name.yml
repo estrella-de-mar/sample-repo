@@ -4,6 +4,7 @@ jobs:
  print:
   name: Super Useful Job
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
    - name: Amazing Script
      run: echo "Hello"
