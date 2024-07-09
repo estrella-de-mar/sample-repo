@@ -3,6 +3,7 @@ on: push
 jobs:
  hash:
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
    - uses: actions/checkout@v4
    - run: echo "${HASH}"

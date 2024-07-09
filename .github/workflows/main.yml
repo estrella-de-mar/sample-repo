@@ -3,6 +3,7 @@ on: push
 jobs:
  hello:
   runs-on: windows-latest
+  timeout-minutes: 1
   steps:
   - run: echo "Hello, Japan"
   - uses: actions/checkout@v4
